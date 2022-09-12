@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <main class="bg-main">
+        <header class="container-fluid">
+            <h1 class="text-center">Challenge <br> Tic Tac Toe</h1>
+        </header>
+        <section class="container-fluid">
+            <div class="container wrapper-board mb-5">
+                <div class="row players p-2 mx-auto">
+                    <div class="col-4">
+                        <div class="players__card position-relative player1 activePlayer">
+                            <div class="avatar">
+                                <img src="./img/profile.png" alt="Player 1">
+                            </div>
+                            <p class="namePlayer">Jona</p>
+                            <div class="wrapper-icon">
+                                <strong class="wrapper-icon--x">X</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="players__round">
+                            <div class="ronda text-center">
+                                <p>1</p>
+                                <small>Round</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="players__card position-relative player2">
+                            <div class="avatar">
+                                <img src="./img/woman.png" alt="Player 1">
+                            </div>
+                            <p class="namePlayer">Manu</p>
+                            <div class="wrapper-icon">
+                                <strong class="wrapper-icon--o">O</strong>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mx-auto text-center mt-4 d-none w-win">
+                    <div>WINS!</div>
+                </div>
+                <div class="mx-auto text-center mt-4 d-none w-losers">
+                    <div>Losers!</div>
+                </div>
+                <div class="row ">
+                    <div class="board" id="board">
+                        <button class="board__cell" data-cell="" id="cell-1">
+                        </button>
+                        <button class="board__cell" data-cell="" id="cell-2">
+                        </button>
+                        <button class="board__cell" data-cell="" id="cell-3">
+                        </button>
+                        <button class="board__cell" data-cell="fewfwef" id="cell-4">
+                        </button>
+                        <button class="board__cell" data-cell="" id="cell-5">
+                        </button>
+                        <button class="board__cell" data-cell="" id="cell-6">
+                        </button>
+                        <button class="board__cell" data-cell="" id="cell-7">
+                        </button>
+                        <button class="board__cell" data-cell="" id="cell-8">
+                        </button>
+                        <button class="board__cell" data-cell="" id="cell-9">
+                        </button>
+                    </div>
+                    <div class="mensaje__ganador d-flex justify-content-center" id="mensajeGanador">
+                        <div mensaje-ganador-text></div>
+                        <button class="btn btn-success btn-restart shadow" id="reset">Reset</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
